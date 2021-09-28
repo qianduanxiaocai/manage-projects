@@ -62,17 +62,15 @@ export default {
                 "path":"/system",
                 "hidden":false,
                 "redirect":"noRedirect",
-                "component":"Layout",
                 "alwaysShow":true,
                 "meta":{
                     "title":"VUE",
-                    "icon":"peoples"
+                    "icon":"vuejs"
                 },
                 "children":[
                     {
                         "name":"/departmentalWork/index",
                         "path":"/departmentalWork/index",
-                        "component":"Layout",
                         "meta":{
                             "title":"部门工作",
                             "icon":"clipboard"
@@ -83,17 +81,15 @@ export default {
                 "name":"element-ui",
                 "path":"/element-ui",
                 "redirect":"noRedirect",
-                "component":"Layout",
                 "alwaysShow":true,
                 "meta":{
                     "title":"element-ui",
-                    "icon":"peoples"
+                    "icon":"element-ui"
                 },
                 "children":[
                     {
                         "name":"/departmentalWork/index",
                         "path":"/departmentalWork/index",
-                        "component":"Layout",
                         "meta":{
                             "title":"部门工作",
                             "icon":"clipboard"
@@ -104,10 +100,39 @@ export default {
                     "name":"Menu",
                     "path":"menu",
                     "hidden":false,
-                    "component":"system/menu/index",
                     "meta":{
-                        "title":"菜单管理",
-                        "icon":"tree-table",
+                        "title":"git",
+                        "icon":"git",
+                        "noCache":false,
+                        "link":null
+                    }
+                },{
+                    "name":"github",
+                    "path":"github",
+                    "hidden":false,
+                    "meta":{
+                        "title":"github",
+                        "icon":"github",
+                        "noCache":false,
+                        "link":null
+                    }
+                },{
+                    "name":"iconSve",
+                    "path":"iconSve",
+                    "hidden":false,
+                    "meta":{
+                        "title":"阿里矢量图svg",
+                        "icon":"icon",
+                        "noCache":false,
+                        "link":null
+                    }
+                },{
+                    "name":"vcode",
+                    "path":"vcode",
+                    "hidden":false,
+                    "meta":{
+                        "title":"vcode",
+                        "icon":"kaifagongju",
                         "noCache":false,
                         "link":null
                     }

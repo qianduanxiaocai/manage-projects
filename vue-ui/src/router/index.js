@@ -69,7 +69,25 @@ export const constantRoutes = [
         component: (resolve) => require(['@/views/index'], resolve),
         name: 'Index',
         meta: { title: '首页', icon: 'dashboard', affix: true }
-      }
+      },
+      {
+        path: 'iconSve',
+        component: (resolve) => require(['@/views/iconSvg/index'], resolve),
+        name: 'iconSve',
+        meta: { title: '阿里矢量图svg', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'github',
+        component: (resolve) => require(['@/views/github/index'], resolve),
+        name: 'github',
+        meta: { title: '阿里矢量图svg', icon: 'dashboard', affix: true }
+      },
+      {
+        path: 'vcode',
+        component: (resolve) => require(['@/views/vcode/index'], resolve),
+        name: 'vcode',
+        meta: { title: 'vcode', icon: 'dashboard', affix: true }
+      },
     ]
   },
 ]
