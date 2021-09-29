@@ -77,10 +77,16 @@ export const constantRoutes = [
         meta: { title: '阿里矢量图svg', icon: 'dashboard', affix: true }
       },
       {
+        path: 'git',
+        component: (resolve) => require(['@/views/git/index'], resolve),
+        name: 'git',
+        meta: { title: 'git', icon: 'dashboard', affix: true }
+      },
+      {
         path: 'github',
         component: (resolve) => require(['@/views/github/index'], resolve),
         name: 'github',
-        meta: { title: '阿里矢量图svg', icon: 'dashboard', affix: true }
+        meta: { title: 'github', icon: 'dashboard', affix: true }
       },
       {
         path: 'vcode',

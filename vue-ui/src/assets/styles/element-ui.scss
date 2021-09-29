@@ -1,5 +1,11 @@
 // cover some element-ui styles
 
+// 修改分页右对齐
+.el-pagination {
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+}
 .el-breadcrumb__inner,
 .el-breadcrumb__inner a {
   font-weight: 400 !important;

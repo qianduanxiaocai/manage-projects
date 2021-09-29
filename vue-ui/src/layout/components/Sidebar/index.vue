@@ -97,8 +97,8 @@ export default {
                     },
                 ]
             },{
-                    "name":"Menu",
-                    "path":"menu",
+                    "name":"git",
+                    "path":"git",
                     "hidden":false,
                     "meta":{
                         "title":"git",
