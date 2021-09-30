@@ -107,7 +107,7 @@
           },{
             date: '2021-09-30',
             order: 'git commit -m "提交代码说明"',
-            img:require('@/assets/images/git/git12.png'),
+            img:require('@/assets/images/git/git14.png'),
             describe: '暂存区内容添加到本地仓库中'
           },
           {
