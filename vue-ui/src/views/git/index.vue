@@ -67,57 +67,118 @@
           tableData: [{
             date: '2021-09-29',
             order: 'git config --global user.name "xxx" / git config --global user.email "xxxxx.com"',
-            img:require('@/assets/images/git5.png'),
+            img:require('@/assets/images/git/git5.png'),
             describe: '创建自己的git用户'
           }, {
             date: '2021-09-29',
             order: 'git config  --list',
-            img:require('@/assets/images/git6.png'),
+            img:require('@/assets/images/git/git6.png'),
             describe: '查看git中的配置列表'
           }, {
             date: '2021-09-29',
             order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            img:require('@/assets/images/git/git7.png'),
             describe: '拷贝一个 Git 仓库到本地'
           }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            date: '2021-09-30',
+            order: 'git branch <name>',
+            img:require('@/assets/images/git/git8.png'),
             describe: '创建分支'
           }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
-            describe: '查看分支'
+            date: '2021-09-30',
+            order: 'git branch -a / git branch',
+            img:require('@/assets/images/git/git9.png'),
+            describe: '查看所有分支与查看当前使用分支'
           }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            date: '2021-09-30',
+            order: 'git checkout [分支名]',
+            img:require('@/assets/images/git/git10.png'),
             describe: '切换分支'
           }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
-            describe: '查看状态'
+            date: '2021-09-30',
+            order: 'git status / git status -s',
+            img:require('@/assets/images/git/git11.png'),
+            describe: '查看工作区状态'
           }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
-            describe: '添加到缓存区'
+            date: '2021-09-30',
+            order: 'git add .',
+            img:require('@/assets/images/git/git12.png'),
+            describe: '全部添加到缓存区'
           },{
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            date: '2021-09-30',
+            order: 'git commit -m "提交代码说明"',
+            img:require('@/assets/images/git/git12.png'),
+            describe: '暂存区内容添加到本地仓库中'
+          },
+          {
+            date: '2021-09-30',
+            order: 'git pull origin main',
+            img:require('@/assets/images/git/git13.png'),
             describe: '拉取代码'
           },{
             date: '2021-09-29',
             order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            img:require('@/assets/images/git/git7.png'),
             describe: '提交代码'
           },{
             date: '2021-09-29',
             order: 'git clone [url]',
-            img:require('@/assets/images/git7.png'),
+            img:require('@/assets/images/git/git7.png'),
+            describe: '解决冲突'
+          },{
+            date: '2021-09-29',
+            order: 'git config --global user.name "xxx" / git config --global user.email "xxxxx.com"',
+            img:require('@/assets/images/git/git5.png'),
+            describe: '创建自己的git用户'
+          }, {
+            date: '2021-09-29',
+            order: 'git config  --list',
+            img:require('@/assets/images/git/git6.png'),
+            describe: '查看git中的配置列表'
+          }, {
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '拷贝一个 Git 仓库到本地'
+          }, {
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '创建分支'
+          }, {
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '查看分支'
+          }, {
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '切换分支'
+          }, {
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '查看状态'
+          }, {
+            date: '2021-09-29',
+            order: 'git add . ',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '全部添加到缓存区'
+          },{
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '拉取代码'
+          },{
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
+            describe: '提交代码'
+          },{
+            date: '2021-09-29',
+            order: 'git clone [url]',
+            img:require('@/assets/images/git/git7.png'),
             describe: '解决冲突'
           }]
         }
@@ -146,7 +207,7 @@
               //    第2页 this.tableData.slice(1*10,2*10) 从下标11处开始，截取到下标为20的数据
                console.log(this.tableData.slice(10))
                console.log(this.tableData.slice(0,10))
-              this.tableListData=this.tableData.slice(this.currentPage*this.numberPage,(val*this.numberPage)+1);
+              this.tableListData=this.tableData.slice(this.currentPage*this.numberPage,val*this.numberPage);
               //console.log(`当前页: ${val}`);
           }
       },
