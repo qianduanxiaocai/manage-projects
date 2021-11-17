@@ -2,10 +2,10 @@
 
 ```bash
 # 克隆项目
-git clone https://gitee.com/y_project/RuoYi-Vue
+git clone git@github.com:qianduanxiaocai/manage-projects.git
 
 # 进入项目目录
-cd ruoyi-ui
+cd VUE-UI
 
 # 安装依赖
 npm install
