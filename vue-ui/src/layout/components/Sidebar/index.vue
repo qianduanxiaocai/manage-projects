@@ -58,8 +58,8 @@ export default {
     data(){
         return{
             sidebarRouters:[{
-                "name":"System",
-                "path":"/system",
+                "name":"VUE",
+                "path":"/VUE",
                 "hidden":false,
                 "redirect":"noRedirect",
                 "alwaysShow":true,
@@ -69,10 +69,10 @@ export default {
                 },
                 "children":[
                     {
-                        "name":"/departmentalWork/index",
-                        "path":"/departmentalWork/index",
+                        "name":"/DataV",
+                        "path":"/DataV",
                         "meta":{
-                            "title":"部门工作",
+                            "title":"DataV",
                             "icon":"clipboard"
                         }
                     },

@@ -11,6 +11,8 @@ import App from './App'
 import store from './store'
 import router from './router'
 import directive from './directive' //directive
+import dataV from '@jiaminghi/data-view';
+
 // import plugins from './plugins' // plugins
 
 import './assets/icons' // icon
@@ -57,6 +59,7 @@ Vue.use(directive)
 // Vue.use(plugins)
 Vue.use(VueMeta)
 DictData.install()
+Vue.use(dataV);
 
 /**
  * If you don't want to use mock-server

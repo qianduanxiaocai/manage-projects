@@ -13,6 +13,10 @@
             label="日期">
         </el-table-column>
         <el-table-column
+            prop="describe"
+            label="描述">
+        </el-table-column>
+        <el-table-column
             prop="order"
             label="执行命令"
            >
@@ -30,9 +34,9 @@
               </el-image>
             </template>
         </el-table-column>
-        <el-table-column
-            prop="describe"
-            label="描述">
+           <el-table-column
+            prop="detailDescribe"
+            label="详细描述">
         </el-table-column>
          <el-table-column
             fixed="right"
@@ -68,118 +72,105 @@
             date: '2021-09-29',
             order: 'git config --global user.name "xxx" / git config --global user.email "xxxxx.com"',
             img:require('@/assets/images/git/git5.png'),
-            describe: '创建自己的git用户'
+            describe: '创建自己的git用户',
+            detailDescribe:'',
           }, {
             date: '2021-09-29',
             order: 'git config  --list',
             img:require('@/assets/images/git/git6.png'),
-            describe: '查看git中的配置列表'
+            describe: '查看git中的配置列表',
+             detailDescribe:'',
           }, {
             date: '2021-09-29',
             order: 'git clone [url]',
             img:require('@/assets/images/git/git7.png'),
-            describe: '拷贝一个 Git 仓库到本地'
+            describe: '拷贝一个 Git 仓库到本地',
+             detailDescribe:'',
           }, {
             date: '2021-09-30',
             order: 'git branch <name>',
             img:require('@/assets/images/git/git8.png'),
-            describe: '创建分支'
+            describe: '创建分支',
+             detailDescribe:'',
           }, {
             date: '2021-09-30',
             order: 'git branch -a / git branch',
             img:require('@/assets/images/git/git9.png'),
-            describe: '查看所有分支与查看当前使用分支'
+            describe: '查看所有分支与查看当前使用分支',
+             detailDescribe:'',
           }, {
             date: '2021-09-30',
             order: 'git checkout [分支名]',
             img:require('@/assets/images/git/git10.png'),
-            describe: '切换分支'
+            describe: '切换分支',
+             detailDescribe:'',
           }, {
             date: '2021-09-30',
             order: 'git status / git status -s',
             img:require('@/assets/images/git/git11.png'),
-            describe: '查看工作区状态'
+            describe: '查看工作区状态',
+             detailDescribe:'',
           }, {
             date: '2021-09-30',
             order: 'git add .',
             img:require('@/assets/images/git/git12.png'),
-            describe: '全部添加到缓存区'
+            describe: '全部添加到缓存区',
+             detailDescribe:'',
           },{
             date: '2021-09-30',
             order: 'git commit -m "提交代码说明"',
             img:require('@/assets/images/git/git14.png'),
-            describe: '暂存区内容添加到本地仓库中'
+            describe: '暂存区内容添加到本地仓库中',
+             detailDescribe:'',
           },
           {
             date: '2021-09-30',
             order: 'git pull origin main',
             img:require('@/assets/images/git/git13.png'),
-            describe: '拉取代码'
+            describe: '拉取代码',
+             detailDescribe:'',
           },{
             date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '提交代码'
+            order: 'git push origin 分支名:主分支名',
+            img:require('@/assets/images/git/git15.png'),
+            describe: '分支向主分支提交代码',
+             detailDescribe:'',
           },{
             date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '解决冲突'
+            order: '',
+            img:require('@/assets/images/git/git16.png'),
+            describe: '解决冲突',
+             detailDescribe:'先找到冲突文件，解决完冲突文件之后,重新添加，提交，然后再次进行推与拉',
           },{
             date: '2021-09-29',
-            order: 'git config --global user.name "xxx" / git config --global user.email "xxxxx.com"',
-            img:require('@/assets/images/git/git5.png'),
-            describe: '创建自己的git用户'
+            order: 'git ls-files',
+            img:require('@/assets/images/git/git17.png'),
+            describe: '查看暂存区中文件信息',
+            detailDescribe:"",
           }, {
             date: '2021-09-29',
-            order: 'git config  --list',
-            img:require('@/assets/images/git/git6.png'),
-            describe: '查看git中的配置列表'
+            order: 'git log',
+            img:require('@/assets/images/git/git3.png'),
+            describe: '查看git（git log）提交历次记录',
+            detailDescribe:'可以显示所有提交过的版本信息，不包括已经被删除的 commit 记录和 reset 的操作'
           }, {
             date: '2021-09-29',
-            order: 'git clone [url]',
+            order: 'git reset --hard "commit id"',
+            img:require('@/assets/images/git/git4.png'),
+            describe: '回退git log指定的commit id',
+            detailDescribe:'回退git log指定的commit id,commit id要加单引号',
+          }, {
+            date: '2021-09-29',
+            order: 'git reflog',
             img:require('@/assets/images/git/git7.png'),
-            describe: '拷贝一个 Git 仓库到本地'
-          }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '创建分支'
-          }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '查看分支'
-          }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '切换分支'
-          }, {
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '查看状态'
-          }, {
-            date: '2021-09-29',
-            order: 'git add . ',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '全部添加到缓存区'
+            describe: '查看git（git reflog）提交历次记录',
+            detailDescribe:'是显示所有的操作记录，包括提交，回退的操作。一般用来找出操作记录中的版本号，进行回退,git reflog常用于恢复本地的错误操作',
           },{
             date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '拉取代码'
-          },{
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '提交代码'
-          },{
-            date: '2021-09-29',
-            order: 'git clone [url]',
-            img:require('@/assets/images/git/git7.png'),
-            describe: '解决冲突'
+            order: 'git reset --hard 版本号',
+            img:require('@/assets/images/git/git4.png'),
+            describe: '回退git reflog',
+            detailDescribe:'回退git reflog前面的版本号,版本号不加单引号',
           }]
         }
       },
@@ -212,4 +203,4 @@
           }
       },
     }
-  </script>
+  </script>-
